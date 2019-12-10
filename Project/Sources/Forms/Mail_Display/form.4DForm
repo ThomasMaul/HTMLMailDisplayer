@@ -1,0 +1,68 @@
+﻿{
+	"destination": "detailScreen",
+	"shared": true,
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "DIN A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"HTMLPreview": {
+					"type": "webArea",
+					"top": 34,
+					"left": 16,
+					"width": 802,
+					"height": 801,
+					"sizingY": "grow",
+					"urlSource": "HTMLPreview_url",
+					"progressSource": "Web Area_progress",
+					"webEngine": "embedded",
+					"contextMenu": "none",
+					"borderStyle": "none"
+				},
+				"ShowImages": {
+					"type": "checkbox",
+					"top": 8,
+					"left": 16,
+					"width": 205,
+					"height": 17,
+					"dataSource": "Form:C1466.ShowImage",
+					"text": "Show external images",
+					"focusable": false,
+					"method": "ObjectMethods/ShowImages.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

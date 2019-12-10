@@ -1,0 +1,69 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "DIN A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"email": {
+					"type": "subform",
+					"top": 82,
+					"left": 30,
+					"width": 848,
+					"height": 919,
+					"dataSource": "Form:C1466.email",
+					"detailForm": "Mail_Display",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable"
+				},
+				"Schaltfläche2": {
+					"type": "button",
+					"top": 21,
+					"left": 40,
+					"width": 130,
+					"height": 41,
+					"shortcutKey": "[right arrow]",
+					"shortcutAccel": true,
+					"text": "Open file",
+					"focusable": false,
+					"method": "ObjectMethods/Schaltfläche2.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

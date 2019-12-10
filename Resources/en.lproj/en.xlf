@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<xliff>
+
+  <file datatype="x-STR#" original="Undefined" source-language="en" target-language="en">
+    <body>
+      <group id="16000" resname="Headers">
+        <trans-unit id="1" resname="EMail_Subject">
+          <source>Subject</source>
+          <target>Subject</target>
+        </trans-unit>
+        <trans-unit id="2" resname="EMail_From">
+          <source>From</source>
+          <target>From</target>
+        </trans-unit>
+        <trans-unit id="3" resname="EMail_ReplyTo">
+          <source>Reply To</source>
+          <target>Reply To</target>
+        </trans-unit>
+        <trans-unit id="4" resname="EMail_Date">
+          <source>Date</source>
+          <target>Date</target>
+        </trans-unit>
+        <trans-unit id="5" resname="EMail_To">
+          <source>To</source>
+          <target>To</target>
+        </trans-unit>
+        <trans-unit id="6" resname="EMail_CC">
+          <source>CC</source>
+          <target>CC</target>
+        </trans-unit>
+       </group>
+    </body>
+  </file>
+
+</xliff>

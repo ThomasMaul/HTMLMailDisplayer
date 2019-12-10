@@ -1,0 +1,12 @@
+*.4dd
+*.4DD
+*.4DIndy
+*.4DIndx
+*.4DB
+example_emails
+*.journal
+*.Match
+Logs
+Project/DerivedData
+*symbols.txt
+userPreferences.*
