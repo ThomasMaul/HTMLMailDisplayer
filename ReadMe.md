@@ -25,15 +25,17 @@ Assign for selected item Form.EnclSelected
 For the column assign this.name
 Example code to handle double click to save enclosure on disk:
 
+```
 If (FORM Event.code=On Double Clicked)
-C_OBJECT($encl)
-$encl:=Form.EnclSelected
-$path:=Form.email.enclosurepath
-$doc:=Select document(System folder(Documents folder)+$encl.name;"";"";File name entry)
-If (OK=1)
-	COPY DOCUMENT($path+$encl.name;document)
+	C_OBJECT($encl)
+	$encl:=Form.EnclSelected
+	$path:=Form.email.enclosurepath
+	$doc:=Select document(System folder(Documents folder)+$encl.name;"";"";File name entry)
+	If (OK=1)
+		COPY DOCUMENT($path+$encl.name;document)
+	End if 
 End if 
-End if 
+```
 
 (the component automatically stores enclosures in path Form.email.enclosurepath, so the code just copies it into the directory selected by the end user)
 
