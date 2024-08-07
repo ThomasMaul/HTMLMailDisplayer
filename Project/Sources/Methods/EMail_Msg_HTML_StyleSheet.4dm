@@ -1,38 +1,35 @@
 //%attributes = {}
-  // ----------------------------------------------------
-  // Project Method: EM4D_Msg_HTML_StyleSheet ({font size}) --> Text
+// ----------------------------------------------------
+// Project Method: EM4D_Msg_HTML_StyleSheet ({font size}) --> Text
 
-  // Adds the tags needed to display the message with the user's preferred font and font size.
+// Adds the tags needed to display the message with the user's preferred font and font size.
 
-  // Access Type: Private
+// Access Type: Private
 
-  // Parameters: 
-  // $1 True = Style for header only, pass if body is HTML already
-  // Returns: 
-  //   $0 : Text : The css style sheet to use 
+// Parameters: 
+// $1 True = Style for header only, pass if body is HTML already
+// Returns: 
+//   $0 : Text : The css style sheet to use 
 
-  // Created by Dave Batton, March 2006
-  // Modified Thomas Maul, August 2008
-  // ----------------------------------------------------
+// Created by Dave Batton, March 2006
+// Modified Thomas Maul, August 2008
+// ----------------------------------------------------
 
-If (Count parameters:C259>0)
-	$OnlyHeader:=$1
-Else 
-	$OnlyHeader:=False:C215
-End if 
+#DECLARE($OnlyHeader : Boolean)->$style_t : Text
 
-C_TEXT:C284($0;$fontName_t;$style_t)
-C_LONGINT:C283($fontSize_i;$headerLineHeight_i;$headerFontSize_i)
+
+C_TEXT:C284($fontName_t)
+C_LONGINT:C283($fontSize_i; $headerLineHeight_i; $headerFontSize_i)
 
 $fontName_t:="Arial"  // - change here if you want a different font
 $fontSize_i:=12  // change here if you want to use a different font size
 
-  // I tried some different stuff and decided I like the header slightly smaller than the body text.
+// I tried some different stuff and decided I like the header slightly smaller than the body text.
 $headerFontSize_i:=$fontSize_i-1
 $headerLineHeight_i:=$headerFontSize_i
 
 $style_t:="<style type=\"text/css\">\r"
-  // $style_t:=$style_t+"<!--\r"   ` incompatible if forwarded email contains some style attributes, like Amazon ad's.
+// $style_t:=$style_t+"<!--\r"   ` incompatible if forwarded email contains some style attributes, like Amazon ad's.
 
 If (Not:C34($OnlyHeader))
 	$style_t:=$style_t+"body, table\r"
@@ -95,7 +92,7 @@ $style_t:=$style_t+"  border-style: none none solid none;\r"
 $style_t:=$style_t+"  margin: 0px;\r"
 $style_t:=$style_t+"}\r"
 
-  // $style_t:=$style_t+"-->\r"
+// $style_t:=$style_t+"-->\r"
 $style_t:=$style_t+"</style>\r\r"
 
-$0:=$style_t
+

@@ -1,8 +1,8 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
 <base name="HTMLMailDisplayer" uuid="653D937614E94075BBE589CB14A64892" collation_locale="de">
 	<schema name="DEFAULT_SCHEMA"/>
-	<base_extra __stringCompHash="icu:63.1.0" __keywordBuildingHash="icu:63.1.0" package_name="HTMLMailDisplayer" structure_file_name="HTMLMailDisplayer" data_file_path=":18_mailtest.4DD">
+	<base_extra package_name="HTMLMailDisplayer" structure_file_name="HTMLMailDisplayer" data_file_path=":18_mailtest.4DD">
 		<journal_file journal_file_enabled="true"/>
 	</base_extra>
 </base>
